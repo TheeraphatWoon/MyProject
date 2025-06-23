@@ -1,13 +1,13 @@
 # Durian Disease Analysis and Recommendation System via LINE Chatbot with Object Detection
 
 **Team Members:**
-* [Theeraphat Sukwong] ([https://github.com/TheeraphatWoon])
+* Theeraphat Sukwong ([https://github.com/TheeraphatWoon])
 
-## 📝 Overview (ภาพรวม)
+## 📝 Overview 
 
 This project introduces an AI-driven system designed to detect and analyze diseases on durian leaves using object detection, providing real-time recommendations through a LINE Chatbot. Developed as a final year project for Electronics Engineering, this system aims to assist durian farmers in early disease identification and management, leveraging modern AI and communication technologies.
 
-## ✨ Key Features (คุณสมบัติเด่น)
+## ✨ Key Features 
 
 * **AI-Powered Disease Detection:** Utilizes YOLOv8 model for accurate identification and classification of various durian leaf diseases from uploaded images.
 * **Real-time Analysis via LINE Chatbot:** Users can upload images directly to the LINE Chatbot and receive instant disease analysis and recommendations.
@@ -16,7 +16,7 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * **User-Friendly Interface:** Provides an intuitive experience for farmers to access agricultural insights effortlessly.
 * **Cultivation Advice:** Offers practical recommendations for disease management and cultivation practices based on detection results.
 
-## ⚙️ Technologies Used (เทคโนโลยีที่ใช้)
+## ⚙️ Technologies Used 
 
 * **Programming Languages:** Python
 * **AI/Machine Learning:** YOLOv8 (Object Detection)
@@ -26,7 +26,7 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * **Deployment/Connectivity:** Webhooks
 * **Other Libraries/Tools:** (e.g., OpenCV, NumPy, Pandas - ถ้าใช้)
 
-## 💡 System Architecture (สถาปัตยกรรมระบบ)
+## 💡 System Architecture 
 
 *Briefly explain how different components interact in text:*
 * The system begins when a user sends an image of a durian leaf to the LINE Chatbot.
