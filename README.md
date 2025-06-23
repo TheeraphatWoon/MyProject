@@ -13,7 +13,6 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * **Real-time Analysis via LINE Chatbot:** Users can upload images directly to the LINE Chatbot and receive instant disease analysis and recommendations.
 * **Data Management:** Implemented MySQL database for efficient storage and retrieval of disease information and user interaction data.
 * **Seamless Integration:** Connects AI model with LINE Messaging API, Webhooks, and a Flask backend for robust communication and functionality.
-* **User-Friendly Interface:** Provides an intuitive experience for farmers to access agricultural insights effortlessly.
 * **Cultivation Advice:** Offers practical recommendations for disease management and cultivation practices based on detection results.
 
 ## ⚙️ Technologies Used 
