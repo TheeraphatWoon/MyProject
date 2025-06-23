@@ -1,8 +1,7 @@
 # Durian Disease Analysis and Recommendation System via LINE Chatbot with Object Detection
 
 **Team Members:**
-* [Your Name] ([Your GitHub Profile Link, e.g., https://github.com/theeraphatsukwong])
-* [Theetawut Promwichean] ([Theetawut's GitHub Profile Link, if applicable, e.g., https://github.com/theetawutp])
+* [Your Name] ([Your GitHub Profile Link, e.g., https://github.com/TheeraphatWoon])
 
 ## 📝 Overview (ภาพรวม)
 
