@@ -45,8 +45,8 @@ This project introduces an AI-driven system designed to detect and analyze disea
 ### Installation 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/TheeraphatWoon/MyProject.git
+    cd MyProject
     ```
 2.  **Create a virtual environment (recommended):**
     ```bash
@@ -60,15 +60,12 @@ This project introduces an AI-driven system designed to detect and analyze disea
     *(Remember to create a `requirements.txt` file by running `pip freeze > requirements.txt` after installing all your project's libraries.)*
 4.  **Database Setup:**
     * Create a MySQL database.
-    * Import the provided SQL schema/data (e.g., `schema.sql`, `data.sql`).
-    * Update database connection details in your configuration file (e.g., `config.py` or `app.py`).
 5.  **LINE Chatbot Setup:**
     * Configure your LINE Messaging API (obtain Channel Access Token and Channel Secret).
     * Set up your Webhook URL using Ngrok or deploy to a public server.
-    * Update LINE credentials in your configuration file (e.g., `config.py` or `app.py`).
 6.  **Run the Flask application:**
     ```bash
-    python app.py
+    python FinalProject.py
     ```
 
 ## 📋 Usage 
@@ -84,12 +81,7 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * Implement real-time monitoring of environmental factors.
 * Add multi-language support.
 
-## 📄 License 
-
-This project is licensed under the [e.g., MIT License] - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## 📧 Contact 
 
 For any inquiries or feedback, please contact:
-* [Your Name]: [Your Email Address]
-* [Theetawut Promwichean]: [Theetawut's Email Address, if applicable]
+* Theeraphat Sukwong: [theeraphatwoon@gmail.com]
