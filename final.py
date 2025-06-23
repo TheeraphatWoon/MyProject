@@ -19,7 +19,7 @@ line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 # โหลดโมเดล
-model = YOLO(r"C:\Users\theer\projectrue\Finalproject\runs\detect\train3true\weights\best.pt")
+model = YOLO("best.pt")
 
 # ฟังก์ชันสำหรับวาดกรอบและข้อความ
 def draw_boxes(image, results):
@@ -124,8 +124,8 @@ def handle_image(event):
         event.reply_token,
         [TextSendMessage(text=reply_text),
          ImageSendMessage(
-             original_content_url="  https://c7b2-2001-fb1-189-fb2a-993d-3154-2f6d-988e.ngrok-free.app/static/received_image.jpg",
-             preview_image_url="  https://c7b2-2001-fb1-189-fb2a-993d-3154-2f6d-988e.ngrok-free.app/static/received_image.jpg"
+             original_content_url="  https://a4a1-2001-fb1-189-c24f-105d-c8f5-fe8-7ad2.ngrok-free.app/static/received_image.jpg",
+             preview_image_url="  https://a4a1-2001-fb1-189-c24f-105d-c8f5-fe8-7ad2.ngrok-free.app/static/received_image.jpg"
          )]
     )
 
@@ -134,25 +134,21 @@ def handle_message(event):
     user_message = event.message.text.strip()  # ข้อความที่ผู้ใช้ส่งมา
 
     # ถ้าผู้ใช้พิมพ์ "คำแนะนำเพิ่มเติม" ให้ Python ไม่ตอบอะไรเลย
-    if user_message == "คำแนะนำเพิ่มเติม":
+    if user_message in ["ข้อมูลเพิ่มเติม", "สอบถามโรคใบทุเรียนจาก AI", "สารเคมี"]:
         return  # ไม่ให้ตอบกลับอะไรเลย เพราะตั้งค่าใน LINE Dev แล้ว
+    
+    disease_info = get_disease_info(user_message)  # ค้นหาข้อมูลโรคใน MySQL
 
-    # ตรวจสอบว่าผู้ใช้พิมพ์ว่า "สอบถามโรคใบทุเรียนจาก AI"
-    if user_message == "สอบถามโรคใบทุเรียนจาก AI":
-        reply = "คุณสามารถส่งรูปใบทุเรียนที่เป็นโรคมาให้เราได้เลยครับ 😃"
+    if disease_info:
+        reply = (
+            f"ชื่อโรค: {disease_info['name']}\n\n"
+            f"สาเหตุ: {disease_info['cause']}\n\n"
+            f"อาการ: {disease_info['symptoms']}\n\n"
+            f"การรักษา: {disease_info['treatment']}\n\n"
+            f"ข้อมูลเพิ่มเติม: {disease_info['additional_info']}"
+        )
     else:
-        disease_info = get_disease_info(user_message)  # ค้นหาข้อมูลโรคใน MySQL
-
-        if disease_info:
-            reply = (
-                f"ชื่อโรค: {disease_info['name']}\n\n"
-                f"สาเหตุ: {disease_info['cause']}\n\n"
-                f"อาการ: {disease_info['symptoms']}\n\n"
-                f"การรักษา: {disease_info['treatment']}\n\n"
-                f"ข้อมูลเพิ่มเติม: {disease_info['additional_info']}"
-            )
-        else:
-            reply = "ขออภัย ไม่พบข้อมูลโรคนี้ในระบบ กรุณาลองใหม่อีกครั้ง"
+         reply = "ขออภัย ไม่พบข้อมูลโรคนี้ในระบบ กรุณาลองใหม่อีกครั้ง"
 
     line_bot_api.reply_message(
         event.reply_token,

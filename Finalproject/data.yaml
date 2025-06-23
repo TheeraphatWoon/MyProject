@@ -1,0 +1,13 @@
+train: /content/drive/MyDrive/testproject/leaf.v21i.yolov8/train/images
+val: /content/drive/MyDrive/testproject/leaf.v21i.yolov8/valid/images
+test: /content/drive/MyDrive/testproject/leaf.v21i.yolov8/test/images
+
+nc: 4
+names: ['Algal Leaf Spot', 'Leaf Blight', 'Leaf Spot', 'No Disease']
+
+roboflow:
+  workspace: coffee-project
+  project: durian-diseases-7prmz-m2tdc
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/coffee-project/durian-diseases-7prmz-m2tdc/dataset/1
