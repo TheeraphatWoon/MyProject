@@ -24,7 +24,7 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * **Web Framework:** Flask
 * **Messaging Platform:** LINE Messaging API, LINE Chatbot
 * **Deployment/Connectivity:** Webhooks
-* **Other Libraries/Tools:** (e.g., OpenCV, NumPy, Pandas - ถ้าใช้)
+* **Other Libraries/Tools:** (e.g., OpenCV, NumPy)
 
 ## 💡 System Architecture 
 
@@ -35,15 +35,15 @@ This project introduces an AI-driven system designed to detect and analyze disea
 * Once detection results (e.g., disease type) are obtained, the system queries the MySQL database to fetch relevant disease information and recommended cultivation advice.
 * Finally, the analysis results, along with practical recommendations, are sent back to the user through the LINE Chatbot for immediate display.
 
-## 🚀 Getting Started (วิธีการใช้งาน/ติดตั้ง)
+## 🚀 Getting Started 
 
-### Prerequisites (สิ่งที่ต้องมี)
+### Prerequisites 
 * Python 3.x
 * MySQL Server
 * LINE Developers Account
-* Ngrok (for local testing of webhooks) - หรือวิธีการ deploy อื่นๆ ที่คุณใช้
+* Ngrok (for local testing of webhooks)
 
-### Installation (ขั้นตอนการติดตั้ง)
+### Installation 
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
@@ -72,24 +72,24 @@ This project introduces an AI-driven system designed to detect and analyze disea
     python app.py
     ```
 
-## 📋 Usage (การใช้งาน)
+## 📋 Usage 
 
 1.  Add the LINE Chatbot to your LINE account.
 2.  Send an image of a durian leaf to the chatbot.
 3.  Receive immediate analysis of potential diseases and recommended actions.
 
-## 🛣️ Future Enhancements (การพัฒนาในอนาคต - Optional)
+## 🛣️ Future Enhancements 
 
 * Integrate more disease types and expand the knowledge base.
 * Develop a mobile application for a richer user experience.
 * Implement real-time monitoring of environmental factors.
 * Add multi-language support.
 
-## 📄 License (ลิขสิทธิ์ - Optional)
+## 📄 License 
 
 This project is licensed under the [e.g., MIT License] - see the [LICENSE.md](LICENSE.md) file for details.
 
-## 📧 Contact (ติดต่อ)
+## 📧 Contact 
 
 For any inquiries or feedback, please contact:
 * [Your Name]: [Your Email Address]
